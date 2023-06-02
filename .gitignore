@@ -1,0 +1,294 @@
+### UDOT
+########
+
+# /*
+# !/bash
+# !/bin
+# !/fzf
+# !/helix
+# !/i3
+# !/kitty
+# !/media
+# !/sxiv
+# !/tmux
+# !/vim
+# !/x11
+# !/zathura
+# !/bookmarks.html
+# !/.gitignore
+# !/LICENSE
+# !/README.md
+# !/restore.sh
+# !/setup.sh
+# 
+# 
+# 
+# 
+# ### BASH
+# ########
+# 
+# /bash/*
+# !/bash/.bash_aliases
+# !/bash/.bash_functions
+# !/bash/.bash_logout
+# !/bash/.bash_profile
+# !/bash/.bashrc
+# !/bash/.git-prompt.sh
+# !/bash/.profile
+# 
+# 
+# 
+# 
+# ### BIN
+# #######
+# 
+# /bin/*
+# !/bin/bin
+# 
+# /bin/bin
+# !/bin/bin/esxiv
+# !/bin/bin/fet
+# !/bin/bin/ffind
+# !/bin/bin/ffm
+# !/bin/bin/fgit
+# !/bin/bin/fjump
+# !/bin/bin/keylayout
+# !/bin/bin/md2html
+# !/bin/bin/mergepdf
+# !/bin/bin/mess
+# !/bin/bin/monlayout
+# !/bin/bin/pipes
+# !/bin/bin/rmall
+# !/bin/bin/rscode
+# !/bin/bin/rsmime
+# !/bin/bin/setwacom
+# !/bin/bin/swallow
+# !/bin/bin/tcv
+# !/bin/bin/tetris
+# !/bin/bin/toggletouch
+# !/bin/bin/ufetch
+# !/bin/bin/xopp2pdf
+# 
+# 
+# 
+# 
+# ### FZF
+# #######
+# 
+# /fzf/*
+# !/fzf/.config
+# 
+# /fzf/.config/*
+# !/fzf/.config/fzf
+# 
+# /fzf/.config/fzf/*
+# !/fzf/.config/fzf/completion.bash
+# !/fzf/.config/fzf/key-bindings.bash
+# 
+# 
+# 
+# 
+# ### HELIX
+# #########
+# 
+# /helix/*
+# !/helix/.config
+# 
+# /helix/.config/*
+# !/helix/.config/helix
+# 
+# /helix/.config/helix/*
+# !/helix/.config/helix/themes
+# !/helix/.config/helix/config.toml
+# 
+# /helix/.config/helix/themes/*
+# !/helix/.config/helix/themes/hembox.toml
+# 
+# 
+# 
+# 
+# ### I3
+# ######
+# 
+# /i3/*
+# !/i3/.config
+# 
+# /i3/.config/*
+# !/i3/.config/i3
+# !/i3/.config/i3status
+# 
+# /i3/.config/i3/*
+# !/i3/.config/i3/config
+# !/i3/.config/i3/i3autoload
+# !/i3/.config/i3/i3menu
+# !/i3/.config/i3/i3scratchpad
+# !/i3/.config/i3/i3windows
+# !/i3/.config/i3/wallpaper
+# 
+# /i3/.config/i3status/*
+# !/i3/.config/i3status/config
+# 
+# 
+# 
+# 
+# ### KAKOUNE
+# ###########
+# 
+# /kakoune/*
+# !/kakoune/.config
+# 
+# /kakoune/.config/*
+# !/kakoune/.config/kak
+# 
+# /kakoune/.config/kak/*
+# !/kakoune/.config/kak/colors
+# !/kakoune/.config/kak/kakrc
+# 
+# /kakoune/.config/kak/colors/*
+# !/kakoune/.config/kak/colors/hembox.kak
+# 
+# 
+# 
+# 
+# ### KITTY
+# #########
+# 
+# /kitty/*
+# !/kitty/.config
+# 
+# /kitty/.config/*
+# !/kitty/.config/kitty
+# 
+# /kitty/.config/kitty/*
+# !/kitty/.config/kitty/kitty.conf
+# !/kitty/.config/kitty/colors
+# 
+# /kitty/.config/kitty/colors/*
+# !/kitty/.config/kitty/colors/gnome-dark.conf
+# !/kitty/.config/kitty/colors/gnome-light.conf
+# 
+# 
+# 
+# 
+# ### MEDIA
+# #########
+# 
+# /media/*
+# !/media/glenda.png
+# !/media/ubuntu.png
+# !/media/wallpaper
+# 
+# 
+# 
+# 
+# ### SXIV
+# ########
+# 
+# /sxiv/*
+# !/sxiv/.config
+# 
+# /sxiv/.config/*
+# !/sxiv/.config/sxiv
+# 
+# /sxiv/.config/sxiv/*
+# !/sxiv/.config/sxiv/exec
+# 
+# /sxiv/.config/sxiv/exec/*
+# !/sxiv/.config/sxiv/exec/key-handler
+# 
+# 
+# 
+# 
+# 
+# ### TMUX
+# ########
+# 
+# /tmux/*
+# !/tmux/.tmux.conf
+# 
+# 
+# 
+# 
+# ### VIM
+# #######
+# 
+# /vim/*
+# !/vim/.vim
+# !/vim/.vimrc
+# 
+# /vim/.vim/*
+# !/vim/.vim/after
+# !/vim/.vim/colors
+# !/vim/.vim/ftplugin
+# !/vim/.vim/plugin
+# !/vim/.vim/pandoc
+# 
+# /vim/.vim/after/*
+# !/vim/.vim/after/ftplugin
+# !/vim/.vim/after/plugin
+# 
+# /vim/.vim/colors/*
+# !/vim/.vim/colors/hembox.vim
+# !/vim/.vim/colors/hemisu.vim
+# 
+# /vim/.vim/ftplugin/*
+# !/vim/.vim/ftplugin/markdown
+# !/vim/.vim/ftplugin/markdown.pandoc
+# !/vim/.vim/ftplugin/pandoc
+# !/vim/.vim/ftplugin/tex
+# !/vim/.vim/ftplugin/text
+# 
+# /vim/.vim/plugin/*
+# !/vim/.vim/plugin/notewiki.vim
+# !/vim/.vim/plugin/simple-complete.vim
+# !/vim/.vim/plugin/utility.vim
+# 
+# /vim/.vim/after/ftplugin/*
+# !/vim/.vim/after/ftplugin/netrw.vim
+# 
+# /vim/.vim/after/plugin/*
+# !/vim/.vim/after/plugin/netrw.vim
+# 
+# /vim/.vim/ftplugin/markdown/*
+# !/vim/.vim/ftplugin/markdown/notewiki.vim
+# 
+# /vim/.vim/ftplugin/tex/*
+# !/vim/.vim/ftplugin/tex/writing-mode.vim
+# 
+# /vim/.vim/pandoc/*
+# !/vim/.vim/pandoc/assets
+# 
+# /vim/.vim/pandoc/assets/*
+# !/vim/.vim/pandoc/assets/before.html
+# !/vim/.vim/pandoc/assets/footer.html
+# !/vim/.vim/pandoc/assets/header.html
+# !/vim/.vim/pandoc/assets/link2html.lua
+# !/vim/.vim/pandoc/assets/link2html.py
+# !/vim/.vim/pandoc/assets/makenote
+# 
+# 
+# 
+# 
+# ### X11
+# #######
+# 
+# /x11/*
+# !/x11/.Xdefaults
+# !/x11/.xinitrc
+# !/x11/.Xresources
+# !/x11/.xsettingsd
+# 
+# 
+# 
+# 
+# ### ZATHURA
+# ###########
+# 
+# /zathura/*
+# !/zathura/.config
+# 
+# /zathura/.config/*
+# !/zathura/.config/zathura
+# 
+# /zathura/.config/zathura/*
+# !/zathura/.config/zathura/zathurarc

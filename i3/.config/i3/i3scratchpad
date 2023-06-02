@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# This script spawns a scratchpad as long as i3 is running using $TERMINAL;
+# it is very usefull if you want a terminal scratchpad always available.
+
+
+while pgrep -x "i3"; do
+    i3-sensible-terminal -T __scratch_0__ &
+    wait $!
+done

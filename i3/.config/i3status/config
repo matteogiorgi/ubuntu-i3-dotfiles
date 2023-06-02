@@ -1,0 +1,70 @@
+general {
+    output_format  = "i3bar"
+    colors         = false
+    markup         = pango
+    interval       = 5
+    color_good     = '#076678'
+    color_degraded = '#af3a03'
+    color_bad      = '#9d0006'
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "volume master"
+order += "battery all"
+order += "tztime local"
+
+
+
+
+cpu_usage {
+    format        = "<span background='#c4d1d4'> CPU %usage </span>"
+    max_threshold = 75
+}
+
+memory {
+    format             = "<span background='#fda49a'> MEM %percentage_used </span>"
+    format_degraded    = "<span background='#fda49a' foreground='#9d0006'> MEM: %free </span>"
+    threshold_degraded = "20%"
+}
+
+disk "/" {
+    format = "<span background='#bdae93'> HDD %percentage_used </span>"
+}
+
+wireless _first_ {
+    format_up   = "<span background='#81a1c1'> WAN%quality - %bitrate </span>"
+    format_down = "<span background='#81a1c1' foreground='#5e5c64'> WAN ---------- </span>"
+}
+
+ethernet _first_ {
+    format_up   = "<span background='#81a1c1'> ETH %speed </span>"
+    format_down = ""
+}
+
+volume master {
+    format       = "<span background='#ebcb8b'> VOL %volume </span>"
+    format_muted = "<span background='#ebcb8b' foreground='#5e5c64'> VOL mute </span>"
+    device       = "default"
+    mixer        = "Master"
+    mixer_idx    = 0
+}
+
+battery all {
+    format        = "<span background='#a3be8c'> %status %percentage </span>"
+    format_down   = "<span background='#a3be8c' foreground='#5e5c64'> ---------- </span>"
+    status_chr    = "CHR"
+    status_bat    = "BAT"
+    status_unk    = "UNK"
+    status_full   = "FULL"
+    path          = "/sys/class/power_supply/BAT%d/uevent"
+    low_threshold = 20
+}
+
+tztime local {
+    format = "<span background='#c3a5bd'> %time </span>"
+    format_time = "%a %d %b - %H:%M"
+}

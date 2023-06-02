@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# Check the relative mime-type here (inode/directory not necessary):
+# https://www.iana.org/assignments/media-types/media-types.xhtml
+
+
+### Functions definition
+########################
+
+[[ -f ~/.bash_functions ]] && . ~/.bash_functions || exit 1
+
+echo "$*" | grep "\.ar\." && {
+    _xhide xterm -e "${EDITOR:=vi}" "$*" &
+    exit
+}
+
+echo "$1" | grep "\.sent$" && {
+    _xhide sent "$1" &
+    exit
+}
+
+
+
+
+### MIME-type opener
+####################
+
+FILE="$*"
+case $(file --mime-type "${FILE}" -bL) in
+    audio/*)
+        [[ -x "$(command -v mpv)" ]] && mpv "$@" || _xshow "xdg-open '${FILE}'"
+        ;;
+    video/*)
+        [[ -x "$(command -v mpv)" ]] && _xshow "mpv --force-window --no-terminal --msg-level=all=no '${FILE}'" || _xshow "xdg-open '${FILE}'"
+        ;;
+    application/pdf | application/postscript | application/djvu | image/vnd.djvu | application/epub+zip)
+        [[ -x "$(command -v zathura)" ]] && _xshow "zathura '${FILE}'" || _xshow "xdg-open '${FILE}'"
+        ;;
+    image/*)
+        [[ -x "$(command -v esxiv)" ]] && _xshow "esxiv '${FILE}'" || _xshow "xdg-open '${FILE}'"
+        ;;
+    text/* | application/json)
+        "${EDITOR:=vi}" "$@"
+        ;;
+    *)
+        _xshow "xdg-open '${FILE}'"
+esac

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+read -p "Check the relative mime-type at: https://www.iana.org/assignments/media-types/media-types.xhtml (enter to continue)"
+"${EDITOR:=vi}" $HOME/.local/share/applications/mimeapps.list
